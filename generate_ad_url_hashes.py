@@ -17,6 +17,8 @@ with open(FILE,encoding='ascii',errors='ignore') as f:
         c.execute(stmt,(line,md5.hexdigest()))
     if counter % 1000 == 0:
         conn.commit()
+    counter +=1
+conn.commit()
 c.close()
 conn.close()
 
