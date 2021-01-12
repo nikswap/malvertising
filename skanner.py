@@ -73,3 +73,5 @@ with open(sys.argv[1]) as f:
                 no_dns.append(schema+url)
                 add_domain_to_db(url, 'FAILED TO FETCH')
             #time.sleep(1)
+
+conn.close()
